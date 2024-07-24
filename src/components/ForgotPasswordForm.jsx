@@ -28,16 +28,21 @@ const ForgotPasswordForm = () => {
 
   return (
     <div className='container forgotpass text-center py-4'>
-      <h2 className='py-2'>Forgot Password</h2>
-      <form onSubmit={handleSubmit}>
-        <label >
-         <b> Email: </b>
-          <input type="email" value={email} onChange={handleEmailChange} required />
-        </label>
-        <br />
-        <button className='resetbtn' type="submit">Reset Password</button>
-      </form>
-      {message && <p>{message}</p>}
+    
+        <div className="col forgotpage">
+          <h2 className=' py-2'>Forgot Password ? </h2>
+          <form onSubmit={handleSubmit}>
+            <label className='py-4'>
+              <b> Email: </b>
+              <input  type="email" value={email} onChange={handleEmailChange} required />
+            </label>
+            <br />
+            <button className='resetbtn' type="submit">Reset Password</button>
+          </form>
+          {message && <p>{message}</p>}
+        </div>
+     
+
     </div>
   );
 };

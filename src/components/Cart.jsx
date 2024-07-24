@@ -24,11 +24,7 @@ const Cart = ({ cart, calculateTotalPrice, removeFromCart }) => {
                 ) : (
 
 
-
-
-
-
-
+                    
 
                     <div className='container text-center py-4 px-0'>
 

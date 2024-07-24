@@ -10,7 +10,6 @@ import AboutUs from './AboutUs'
 import Cart from './Cart'
 import ShopCard from './ShopCard'
 import Blogs from './Blogs'
-import img from '../images/coffee 2.jpg'
 import ForgotPasswordForm from './ForgotPasswordForm'
 
 const Maincontent = () => {
@@ -19,18 +18,20 @@ const Maincontent = () => {
     const [cart, setCart] = useState([]);
 
     const [initialProducts, setInitialCart] = useState([
-        { id: 1, name: "Black Tea 250g", price: 145, quantity: 0, img: '../images/Black-Tea-.webp' },
-        { id: 2, name: "Black Tea 500g", price: 290, quantity: 0, img: '../images/Black-Tea-.webp' },
-        { id: 3, name: "Black Tea 1kg", price: 580, quantity: 0, img: '../images/Black-Tea-.webp' },
+        { id: 1, name: "Black Tea 250g", price: 145, quantity: 0, img: '../images/blackTea.jpg' },
+        { id: 2, name: "Black Tea 500g", price: 290, quantity: 0, img: '../images/blackTea.jpg' },
+        { id: 3, name: "Black Tea 1kg", price: 580, quantity: 0, img: '../images/blackTea.jpg' },
         { id: 4, name: "Green Tea 250g", price: 190, quantity: 0, img: '../images/Greentea.png' },
         { id: 5, name: "Green Tea 500g", price: 380, quantity: 0, img: '../images/Greentea.png' },
         { id: 6, name: "Green Tea 1kg", price: 760, quantity: 0, img: '../images/Greentea.png' },
-        { id: 7, name: "White Tea 500g", price: 780, quantity: 0, img: '../images/whitetea.jpg' },
-        { id: 8, name: "White Tea 1kg", price: 1560, quantity: 0, img: '../images/whitetea.jpg' },
+        { id: 7, name: "White Tea 500g", price: 780, quantity: 0, img: '../images/WTEA.jpg' },
+        { id: 8, name: "White Tea 1kg", price: 1560, quantity: 0, img: '../images/WTEA.jpg' },
         { id: 9, name: "Oolong Tea 500g", price: 780, quantity: 0, img: '../images/oolong tea.webp' },
         { id: 10, name: "Oolong Tea 1kg", price: 1560, quantity: 0, img: '../images/oolong tea.webp' },
         { id: 11, name: "Serenity Spice Symphony 500g", price: 780, quantity: 0, img: '../images/cardamom-tea.webp' },
         { id: 12, name: "Serenity Spice Symphony 1kg", price: 1560, quantity: 0, img: '../images/cardamom-tea.webp' },
+        { id: 12, name: "Ginger Serenitea 500g", price: 780, quantity: 0, img: '../images/newgtea.png' },
+        { id: 12, name: "Ginger Serenitea 1kg", price: 1560, quantity: 0, img: '../images/newgtea.png' },
         { id: 13, name: "Soothing Chamomile 500g", price: 1560, quantity: 0, img: '../images/chamomile-tea.webp' },
         { id: 14, name: "Soothing Chamomile 1kg", price: 1560, quantity: 0, img: '../images/chamomile-tea.webp' },
         { id: 15, name: "Hibiscus Dream 500g", price: 780, quantity: 0, img: '../images/hibiscusteaaa.jpeg' },
@@ -45,11 +46,6 @@ const Maincontent = () => {
         { id: 20, name: "Tea Infuser pot", price: 1299, quantity: 0, img: '../images/teainfuser.jpg' },
        
     ]);
-
-
-
-
-
 
     const addToCart = (product) => {
         const updatedCart = [...cart];
@@ -113,10 +109,12 @@ const Maincontent = () => {
             <NavPage />
             <Routes>
                 <Route path='/' element={< HomePage />}></Route>
-                <Route path="/shopnow" element={
+                <Route path="shopnow" element={
                     <ShopCard
                         addToCart={addToCart}
                         removeFromCart={removeFromCart}
+
+                        
                         cart={cart} initialProducts={initialProducts}
                     />}
                 />

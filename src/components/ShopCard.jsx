@@ -7,7 +7,7 @@ import { FaShoppingCart } from "react-icons/fa";
 function ShopCard({ addToCart, cart, removeFromCart, initialProducts }) {
 
     return (
-        <div>
+      
             <div className="container px-0">
                 <ShopNow />
                 <div className="row">
@@ -24,13 +24,10 @@ function ShopCard({ addToCart, cart, removeFromCart, initialProducts }) {
                                     <div className="d-flex justify-content-center align-items-center pt-2">
                                         <button className="btn btn-primary mr-2" onClick={() => addToCart(product)}>Add</button>
                                         {cart.some((p) => p.id === product.id) && (
-                                            <button className="btn btn-danger" onClick={() => removeFromCart(product)}>Remove</button>
-
+                                        <button className="btn btn-danger" onClick={() => removeFromCart(product)}>Remove</button>
                                         )}
                                         <Link to='/Cart'> <button className="btn ms-2"> <FaShoppingCart /></button></Link>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
@@ -40,7 +37,7 @@ function ShopCard({ addToCart, cart, removeFromCart, initialProducts }) {
                 <hr />
 
             </div>
-        </div >
+     
     );
 }
 

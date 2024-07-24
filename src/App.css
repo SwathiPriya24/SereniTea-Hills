@@ -41,8 +41,6 @@ a.nav-link {
 }
 
 
-
-
 .navbar-toggler {
   color: white;
 }
@@ -120,7 +118,7 @@ a.nav-link {
 }
 
 .login {
-  background-image: url('./images/bg.jpg');
+  background-image: url('./images/backdrop.jpg');
   height: 100vh;
   width: 100%;
   color: white;
@@ -145,11 +143,24 @@ input {
 }
 
 .forgotpass {
-  background-image: url(./images/bg.jpg);
+  background-image: url(./images/backdrop.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+
+}
+
+.forgotpage {
+
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
 }
 
 .remfor a {
@@ -185,14 +196,6 @@ input {
   color: #000 !important;
 }
 
-.newproduct {
-  background-image: url('./images/newproduct.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  /* width: 100%; */
-
-}
 
 @media only screen and (max-width:768px) {
 
@@ -208,15 +211,6 @@ input {
     padding-top: 120px;
   }
 
-  .newproduct {
-    background-image: url('./images/newproduct.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-
-  }
-
   .aboutimg,
   .processimg {
     height: 50vh;
@@ -227,7 +221,6 @@ input {
 
   .aboutUsCont {
     width: 100%;
-
   }
 }
 
@@ -236,8 +229,6 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
 
 .tea {
   height: 200px !important;
@@ -271,10 +262,26 @@ input {
   margin-left: -20% !important;
   width: 40% !important;
   border-radius: 10px;
-  background: #000;
+  background: none !important;
   color: #fff;
   padding: 10px;
   font-size: 12px;
+  text-align: center;
+  transition: opacity .35s ease-in-out;
+}
+
+.carousel .slide .legend:hover {
+  transition: all .5s ease-in-out;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -20% !important;
+  width: 40% !important;
+  border-radius: 10px;
+  background:#37520B !important;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px !important;
   text-align: center;
   opacity: 0.25;
   transition: opacity .35s ease-in-out;
@@ -286,8 +293,9 @@ a {
   font-size: 20px !important;
 }
 
-.legend {
+button .legend {
   color: white !important;
+
 }
 
 
@@ -326,11 +334,6 @@ textarea {
 }
 
 
-.carousel .slide .legend {
-
-  background: #479909 !important;
-  color: #fff;
-}
 
 .carousel .carousel-status {
   position: none !important;
@@ -378,6 +381,7 @@ textarea {
   background-color: #e1f3d2;
 }
 
+
 .complete {
   background-color: #e1f3d2;
 }
@@ -386,6 +390,7 @@ textarea {
   .abtimgone img {
     height: 500px;
     background-color: #e1f3d2;
+    width: 60%;
   }
 
   .aboutusimg {
@@ -401,7 +406,8 @@ textarea {
 }
 
 .shoptxt {
-  color: #ffffff !important;
+  color: #37520B !important;
+  font-size: medium;
 }
 
 
@@ -411,9 +417,6 @@ textarea {
   padding: 5px;
 
 }
-
-
-
 
 .card-img-top {
   height: 250px;
@@ -454,7 +457,7 @@ svg {
 }
 
 .productImgCard {
-  height: 245px;
+  height: 230px;
   width: 100%;
 }
 
@@ -463,9 +466,14 @@ svg {
   width: 400px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
+  background-color: #d3ecc0;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blogimg {
+  height: 250px !important;
 }
 
 .form-group {
@@ -499,6 +507,17 @@ input[type="password"] {
   background-repeat: no-repeat;
 }
 
+.abtpgimg {
+  background-image: url(./images/abtpgimg.jpg);
+  height: 200px;
+  background-size: cover;
+  animation-name: zoom-in;
+  transition: transform 0.3s ease-out;
+}
+
+.abtpgimg:hover {
+  transform: scale(1.01);
+}
 
 /* button styles */
 
@@ -515,7 +534,8 @@ input[type="password"] {
 }
 
 .submitbtn {
-  width: 20%;
+  width: 40%;
+  margin-top: 10px;
 }
 
 .btnlogin a {
@@ -552,6 +572,20 @@ input[type="password"] {
   width: 50% !important;
 }
 
+.entrySec {
+  position: relative;
+  height: fit-content;
+}
+
+.btnshop {
+  width: 200px;
+  position: absolute;
+  /* top: -100px; */
+  left: 65px;
+  bottom: 230px;
+  padding: 10px 20px;
+}
+
 button.navbar-toggler {
   border-color: #445835 !important;
 }
@@ -586,5 +620,29 @@ button.navbar-toggler {
 }
 
 .resetbtn {
-  width: 20%;
+  width: 40%;
+}
+
+@media only screen and (max-width:992px) {
+
+
+  .btnshop {
+    width: 150px;
+    position: absolute;
+    /* top: -100px; */
+    left: 50px;
+    bottom: 80px;
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .btnshop {
+    width: 129px;
+    position: absolute;
+    /* top: -100px; */
+    left: 50px;
+    bottom: 30px;
+    padding: 4px 13px;
+  }
 }
