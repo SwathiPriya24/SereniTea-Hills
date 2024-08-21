@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -6,23 +8,33 @@ import { FaUserCircle } from "react-icons/fa";
 import { CgMenuLeftAlt } from "react-icons/cg";
 import { Link } from 'react-router-dom'
 import { RiShoppingBag4Line } from "react-icons/ri";
-function NavPage() {
+
+
+
+export default function NavPage() {
+    const [showBasic, setShowBasic] = useState(false);
+
     return (
-        <div className="container px-0">
+        <header>
+
+            <div className="topOfferBar">
+                Offer  Citrus Bliss Green Tea | Use "TEA20" & Get FLAT 20% OFF
+            </div>
+
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container fluid className='py-2'>
                     <Navbar.Brand href="#">
                         <Link to='/'> LOGO</Link>
                     </Navbar.Brand>
-
                     <span className="d-flex navCartLeft">
-                        <Nav.Link href="#action1" className='cart'>
+                        <Nav.Link href="#action1" className='cart d-flex align-items-center'>
                             <Link to="/Cart"> <RiShoppingBag4Line /> </Link>
                         </Nav.Link>
-                        <Nav.Link href="#action1" className='cart'>
+                        <Nav.Link href="#action1" className='cart d-flex align-items-center'>
                             <Link to='/login'> <FaUserCircle /></Link>
                         </Nav.Link>
-                        <Navbar.Toggle> <span className="menuIcon"><CgMenuLeftAlt /></span>
+                        <Navbar.Toggle>
+                            <CgMenuLeftAlt />
                         </Navbar.Toggle>
                     </span>
 
@@ -32,27 +44,24 @@ function NavPage() {
                             <Nav.Link href="#action1">
                                 <Link to='/home'>  Home</Link>
                             </Nav.Link>
+                          
                             <Nav.Link href="#action2">
+                                <Link to='/aboutus'> About Us</Link> </Nav.Link>
+                                <Nav.Link href="#action2">
                                 <Link to='/shopnow'>  Shop Now</Link>
                             </Nav.Link>
                             <Nav.Link href="#action2">
-                                <Link to='/ourteas'> Our Teas</Link>
-                            </Nav.Link>
-                            <Nav.Link href="#action2">
-                                <Link to='/aboutus'> About Us</Link> </Nav.Link>
-                            <Nav.Link href="#action2">
                                 <Link to='/blog'> Blogs</Link></Nav.Link>
-                            <Nav.Link href="#action2">
-                                <Link to='/contact'> Contact</Link>
-                            </Nav.Link>
+                         
                         </Nav>
                         <span className="d-flex navCartRight">
-                            {/* <div className='cart'></div> */}
                             <Nav.Link href="#action1" className='cart'>
-                                <Link to="/Cart"> <RiShoppingBag4Line /> </Link>
+                                <Link to="/Cart">
+                                    <RiShoppingBag4Line style={{ height: '100%', width: 'auto' }} />
+                                </Link>
                             </Nav.Link>
                             <Nav.Link href="#action1" className='cart'>
-                                <Link to='/login'> <FaUserCircle /></Link>
+                                <Link to='/login'> <FaUserCircle style={{ height: '100%', width: 'auto' }} /></Link>
                             </Nav.Link>
 
                             <Navbar.Toggle aria-controls="navbarScroll" />
@@ -61,8 +70,8 @@ function NavPage() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div >
+
+
+        </header >
     );
 }
-
-export default NavPage;

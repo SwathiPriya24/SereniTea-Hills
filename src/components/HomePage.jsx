@@ -1,24 +1,28 @@
 
 import React from 'react'
-import Header from './Header'
-import SectionOne from './SectionOne'
-import SectionTwo from './SectionTwo'
-import SectionThree from './SectionThree'
-import SectionFour from './SectionFour'
-import SectionFive from './SectionFive'
+// import Header from './Header'
+import AboutSection from './AboutSection'
+import TeaManufactProcess from './TeaManufactProcess'
+import OurTea from './OurTea'
+import ShopNowHome from './ShopNowHome'
+import BannerSectionOne from './BannerSectionOne'
+import ContactUs from './ContactUs'
+import OurOtherProducts from './OurOtherProducts'
 
 
 const HomePage = () => {
     return (
         <div>
 
+            <BannerSectionOne />
 
-            <Header />
-            <SectionOne />
-            <SectionTwo />
-            <SectionThree />
-            <SectionFour />
-            <SectionFive />
+            <AboutSection />
+            <TeaManufactProcess />
+            <OurTea />
+
+            <ShopNowHome />
+            <OurOtherProducts />
+            <ContactUs />
 
 
 

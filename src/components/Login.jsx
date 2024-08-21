@@ -27,7 +27,7 @@ const Login = () => {
       <div className="login-container py-2">
 
         <form onSubmit={handleLogin}>
-          <h2 className='text-center'>Login to your Account</h2>
+          <h2 className='conthead text-center py-4'>Login to your Account</h2>
           <div className='btnlogin py-2 text-center'>
             <a >
               <Link to="/"><img src={googleimg} /> Continue with Google</Link>
@@ -60,7 +60,7 @@ const Login = () => {
               <a href="/forgot-password">Forgot Password?</a>
             </div>
           </div>
-          <button type="submit">
+          <button className='btnlogin' type="submit">
             <Link to="/Cart">Login</Link>
           </button>
         </form>

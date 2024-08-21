@@ -2,23 +2,213 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Rajdhani", sans-serif; */
+
 }
 
 
-/* Nav styles */
-.navbar>.container,
-.navbar>.container-fluid,
-.navbar>.container-lg,
-.navbar>.container-md,
-.navbar>.container-sm,
-.navbar>.container-xl,
-.navbar>.container-xxl {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #445835;
 
+:root {
+  --primary-color: #507d3c;
+  --secondary-color: #FF7C00;
+  --teritary-color: #EEEEEE;
+  --teritary-color: #EEEEEE;
+  --white-color: #ffffff;
+  --fade-color: #E4FFE2;
+  --roboto-font: "Roboto", sans-serif;
+  --roboto-font: "Roboto", sans-serif;
+
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+
+
+
+
+}
+
+/* p{
+  font-family: "Philosopher", sans-serif  !important;
+  font-weight: 500;
+
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yatra One", system-ui;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+
+}
+
+.aboutUsImgLeft {
+  border-radius: 20px;
+  background-color: var(--fade-color);
+}
+
+/* .bg-body-tertiary .navbar .navbar-expand-lg{ */
+.navbar.navbar-expand-lg {
+  background-color: var(--primary-color) !important;
+
+}
+
+.navMainBar {
+  z-index: 1000;
+}
+
+.navbar a {
+  font-size: 13px;
+  /* font-weight: 500; */
+}
+
+.blackteaht.card {
+  border: none;
+}
+
+.blackteaht .card-body {
+  transition: 2s;
+  position: absolute;
+  /* top: 100px; */
+  /* left:-100px; */
+  opacity: 0;
+  transform: translateX(-100px);
+  bottom: 8px;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.showmorebtn svg {
+  color: var(--secondary-color);
+  text-align: end;
+
+}
+
+.showmorebtn a {
+  color: var(--secondary-color) !important;
+
+}
+
+.blackteaht:hover .card-body {
+  transition: 2s;
+  opacity: 1;
+  transform: translateX(0px);
+
+}
+
+.aboutUsSection {
+  background-color: var();
+}
+
+.shopCart {
+  font-size: 30px;
+}
+
+.navbar {
+  position: sticky;
+  top: 38PX;
+  z-index: 1000;
+  width: 100%;
+  margin-bottom: 100PX;
+}
+
+.navbar a {
+  transition: 0.8s;
+}
+
+.navbar a:hover {
+  color: var(--secondary-color) !important;
+
+
+}
+
+body {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.teaManuSec,
+.aboutUsSection,
+.OurTeas,
+.teaManuSec,
+.shopNowSec,
+.ourProducts {
+  padding: 50px 10px;
+}
+
+.ourProducts li {
+  color: var(--primary-color);
+}
+
+.ourProducts h2 {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.aboutUsSection,
+.OurTeas {
+  background-color: var(--fade-color);
+
+}
+
+.welcomeSec h1 {
+  /* color: var(--secondary-color); */
+  color: var(--primary-color);
+
+}
+
+.welcomeSec {
+  padding: 100px 0px;
+
+}
+
+.footerSec a {
+  color: black !important;
+}
+
+.footerSec li {
+  list-style-type: none;
+  padding: 6px 0px;
+}
+
+/* WebKit */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 100px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  /* Decrease the height of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #309800;
+}
+
+
+
+.contentSec {
+  margin-top: 50px;
 }
 
 .navbar {
@@ -31,10 +221,7 @@
   color: white !important;
 }
 
-.navbar {
-  padding-top: 0px !important;
 
-}
 
 a.nav-link {
   color: white !important;
@@ -72,29 +259,10 @@ a.nav-link {
   margin-right: 10px;
 }
 
+.introBanner {
+  background-image: url(../public/images/banner-main.png);
 
-@media only screen and (min-width:992px) {
-  span.navCartLeft {
-    display: none !important;
-  }
-
-  .navBarCenter {
-    display: flex !important;
-    justify-content: center !important;
-    width: 90% !important;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0px 10px !important;
-  }
 }
-
-@media only screen and (max-width:992px) {
-  span.navCartRight {
-    display: none !important;
-  }
-}
-
 
 
 
@@ -118,7 +286,7 @@ a.nav-link {
 }
 
 .login {
-  background-image: url('./images/backdrop.jpg');
+  /* background-image: url('./images/backdrop.jpg'); */
   height: 100vh;
   width: 100%;
   color: white;
@@ -185,10 +353,7 @@ input {
 
 }
 
-.aboutUsCont {
-  width: 70%;
-  margin: auto;
-}
+
 
 
 .carousel.carousel-slider .control-arrow {
@@ -197,44 +362,17 @@ input {
 }
 
 
-@media only screen and (max-width:768px) {
-
-  .heading {
-    height: 100vh;
-    width: 100%;
-    color: white;
-    background-image: url('./images/secOneBg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    padding-top: 120px;
-  }
-
-  .aboutimg,
-  .processimg {
-    height: 50vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .aboutUsCont {
-    width: 100%;
-  }
-}
-
 .processimg {
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.tea {
+/* .tea {
   height: 200px !important;
   width: 200px !important;
 
-}
+} */
 
 .otherproduct {
   height: 200px !important;
@@ -243,16 +381,172 @@ input {
 
 }
 
+.bg-image {
+  margin-top: 80px;
+}
+
+
+
+
+.bannnerBtn {
+  background-color: var(--primary-color);
+  color: var(--teritary-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 1px 20px;
+  transition: 1s;
+}
+
+/* .bannnerBtn:hover {
+  background-color: var(--secondary-color);
+} */
+.prodCardImg img {
+  border-radius: 15px 15px 0px 0px;
+  height: 200px;
+  width: 100%;
+}
+
+.aboutUs h3 {
+  color: var(--primary-color);
+
+}
+
+.aboutUs h2 {
+  color: var(--secondary-color);
+  /* list-style-image: url(); */
+
+
+}
+
+.aboutUs li {
+  margin: 10px 0;
+  padding-left: 40px;
+  background: url('./images/iconTea.png') no-repeat left center;
+  background-size: 30px 30px;
+}
+
+
+.aboutUs li {
+  list-style-type: none;
+  line-height: 35px;
+
+}
+
+.aboutUs p,
+li {
+  line-height: 32px;
+  margin: 10px 0;
+}
+
+
+.prodCont {
+
+  background-color: #e5e7a8;
+  padding: 10px 10px 20px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.outer-BannerCont h6 {
+  font-size: 18px;
+}
+
+.outer-BannerCont h1 {
+  font-size: 52px;
+  /* color: var(--primary-color);} */
+  color: #309800;
+}
+
+.outer-BannerCont {
+  background-color: #333;
+  /* background-image: url(./images/secOneBg.png); */
+  /* Replace with your image URL */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat;/ */
+  /* height: 580px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogSection,
+.aboutUs {
+  padding-top: 165px;
+  padding-bottom: 50PX;
+}
+
+
+.inner-BannerCont {
+
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Light background color with transparency */
+  padding-top: 150px;
+  padding-bottom: 50px;
+
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.blogCardMain h5 {
+  color: var(--secondary-color);
+}
+
+.blogSection h1 {
+  color: var(--primary-color);
+}
+
+.blogCardMain {
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 0.2px 0.2px 3px var(--primary-color);
+}
+
+.blogCardMain b {
+  color: var(--primary-color);
+}
+
+.inner-BannerCont h1 {
+  color: #b1b23a;
+}
+
+.inner-BannerCont h6 {
+  line-height: 30px;
+  color: #646c1a;
+}
+
+
+
+.productPrice svg {
+  color: var(--primary-color);
+}
+
 .blackteaht img {
   height: 185px;
-  background-color: #afd294;
+  transition: 1.3s;
+
+}
+
+.blackteaht {
+  overflow: hidden;
+
+
+}
+
+.blackteaht:hover img {
+  transform: scale(1.2);
+
 }
 
 
-.changeht img {
+/* .changeht img {
   height: 500px;
   width: 50% !important;
-}
+} */
 
 .carousel .slide .legend {
   transition: all .5s ease-in-out;
@@ -268,9 +562,10 @@ input {
   font-size: 12px;
   text-align: center;
   transition: opacity .35s ease-in-out;
+  background: #37520B !important;
 }
 
-.carousel .slide .legend:hover {
+/* .carousel .slide .legend:hover {
   transition: all .5s ease-in-out;
   position: absolute;
   bottom: 40px;
@@ -278,19 +573,19 @@ input {
   margin-left: -20% !important;
   width: 40% !important;
   border-radius: 10px;
-  background:#37520B !important;
+
   color: #fff;
   padding: 10px;
   font-size: 12px !important;
   text-align: center;
   opacity: 0.25;
   transition: opacity .35s ease-in-out;
-}
+} */
 
 a {
   color: rgb(255, 255, 255) !important;
   text-decoration: none !important;
-  font-size: 20px !important;
+  /* font-size: 20px !important; */
 }
 
 button .legend {
@@ -317,11 +612,12 @@ button .legend {
 
 
 .card-body {
-  flex: 1 1 auto;
-  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  color: var(--bs-card-color);
-  background-color: #cdefc8;
+
+
+  color: white !important;
+  background-color: var(--primary-color);
   border: none;
+  z-index: 1;
 }
 
 input,
@@ -346,14 +642,14 @@ textarea {
 }
 
 .card-title {
-  color: #479909 !important;
+
   margin-bottom: 0px !important;
 }
 
 /* SectionThree.css */
 
 .tea-img {
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.6s ease-in-out;
   /* Smooth transition for scaling */
 }
 
@@ -386,24 +682,8 @@ textarea {
   background-color: #e1f3d2;
 }
 
-@media only screen and (max-width:768px) {
-  .abtimgone img {
-    height: 500px;
-    background-color: #e1f3d2;
-    width: 60%;
-  }
 
-  .aboutusimg {
-    height: 250px;
-  }
-}
 
-@media only screen and (max-width:992px) {
-  .changeht img {
-    height: 320px;
-    width: 50% !important;
-  }
-}
 
 .shoptxt {
   color: #37520B !important;
@@ -461,10 +741,11 @@ svg {
   width: 100%;
 }
 
-/* src/LoginForm.css */
+
 .login-container {
   width: 400px;
   margin: 0 auto;
+  margin-top: 90px;
   padding: 20px;
   border: 1px solid #ffffff;
   background-color: #d3ecc0;
@@ -509,10 +790,35 @@ input[type="password"] {
 
 .abtpgimg {
   background-image: url(./images/abtpgimg.jpg);
-  height: 200px;
+  height: 400px;
   background-size: cover;
   animation-name: zoom-in;
-  transition: transform 0.3s ease-out;
+
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate;
+}
+
+.submitBtn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 100px;
+
+
+  border: none;
+  border-radius: 15px;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.02);
+  }
+
 }
 
 .abtpgimg:hover {
@@ -521,16 +827,45 @@ input[type="password"] {
 
 /* button styles */
 
-.showmorebtn {
-  width: 50%;
-}
 
 .shopnowbtn {
-  width: 50%;
+  width: 10%;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+.shopnowbtn {
+  width: 20%;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
 }
 
-.readmorebtn {
-  width: 50%;
+.aboutUsCont p {
+  line-height: 1.6;
+}
+
+
+
+
+.btn-green {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 1.5S;
+
+}
+
+.btn-green:hover {
+  background-color: var(--secondary-color);
+
+  color: var(--white-color);
+  /* border: none !important; */
+  padding: 5px 10px;
+  border-radius: 10px;
+
 }
 
 .submitbtn {
@@ -538,10 +873,18 @@ input[type="password"] {
   margin-top: 10px;
 }
 
-.btnlogin a {
-  background-color: none !important;
-  color: #479909 !important;
+.btnlogin {
+  border: none !important;
+  background-color: var(--primary-color) !important;
+  color: white !important;
   cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btnlogin a {
+  color: white !important;
+
 }
 
 .btn-primary {
@@ -586,21 +929,15 @@ input[type="password"] {
   padding: 10px 20px;
 }
 
+nav {
+  position: fixed !important;
+}
+
 button.navbar-toggler {
   border-color: #445835 !important;
 }
 
-button {
-  background-color: #445835 !important;
-  color: white;
-  padding: 10px;
-  border-radius: 10px !important;
-  cursor: pointer;
-  margin-top: 10px;
-  width: 100%;
-  border: none;
-  font-size: 16px;
-}
+
 
 .outerButnCont button {
   cursor: pointer;
@@ -615,6 +952,157 @@ button {
   margin: 0px !important;
 }
 
+h2 {
+  font-size: 42px !important;
+}
+
+.ourProducts {
+  background-color: var(--fade-color);
+}
+
+.otherProductsSection {
+  padding: 20px;
+  /* background-color: #f9f9f9;
+  border: 1px solid #ddd; */
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.teaManuSec h2,
+.shopNowSec h2 {
+  color: var(--primary-color);
+}
+
+.otherProductsSection h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.text-secondaryClr {
+  color: var(--secondary-color);
+}
+
+.text-primaryClr {
+  color: var(--primary-color);
+}
+
+.productList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contactUsSec svg {
+  color: var(--primary-color);
+  font-size: 23px;
+  transition: 1s;
+}
+
+.contactUsSec .contacticon {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: var(--fade-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  padding: 5px;
+
+  border-radius: 50%;
+}
+
+.contactUsSec .contacticon:hover svg {
+  color: var(--secondary-color);
+  /* transform: rotateY(360deg); */
+  transition: 1.2s;
+}
+
+.inner-BannerCont .contacticon svg {
+  color: var(--primary-color);
+  font-size: 22px;
+}
+
+.inner-BannerCont .contacticon {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: var(--fade-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  padding: 5px;
+
+  border-radius: 50%;
+}
+
+.inner-BannerCont .contacticon:hover svg {
+  color: var(--secondary-color);
+  /* transform: rotateY(360deg); */
+  transition: 1.2s
+}
+
+.contactUsSec H2 {
+  color: var(--primary-color);
+}
+
+
+.contactUsSec label {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+iframe {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* border: red; */
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 34px;
+  padding: 20px;
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+
+  border-color: var(--secondary-color) !important;
+  outline: 0;
+  box-shadow: 0.1px 0.1px 2px var(--secondary-color) !important;
+}
+
+
+
+.productList li {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.productList strong {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.productList p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.aboutUsSection h2,
+.OurTeas h2 {
+  color: var(--secondary-color);
+}
+
+footer.bg-light {
+  background-color: rgb(228 255 226) !important;
+}
+
 button.navbar-toggler {
   margin: 0px !important;
 }
@@ -623,7 +1111,53 @@ button.navbar-toggler {
   width: 40%;
 }
 
+.navbar-toggler {
+  padding: 0PX;
+  border: none;
+}
+
+.navbar-toggler svg {
+  margin-top: 0px;
+  border: none;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+footer h6 {
+  color: var(--primary-color);
+}
+
+
+.addToCartProd {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 22px;
+  border: none;
+  border-radius: 20px;
+
+}
+
+.placeorderProd {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 22px;
+  border: none;
+  border-radius: 20px;
+  width: 20%;
+}
+
+@media only screen and (min-width:992px) {
+  span.navCartLeft {
+    display: none !important;
+  }
+}
+
 @media only screen and (max-width:992px) {
+  span.navCartRight {
+    display: none !important;
+  }
 
 
   .btnshop {
@@ -636,7 +1170,92 @@ button.navbar-toggler {
   }
 }
 
-@media only screen and (max-width: 500px) {
+.topOfferBar {
+  background-color: #996e45;
+  color: white;
+  height: fit-content;
+  padding: 10px 0px;
+  font-size: 12px;
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+  animation: zoom-in-out 5s infinite;
+
+
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1);
+
+  }
+
+  50% {
+    transform: scale(1.2);
+
+  }
+
+  100% {
+    transform: scale(1);
+
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .outer-BannerCont h1 {
+    font-size: 32px;
+  }
+
+  .topOfferBar {
+
+    font-size: 8px;
+
+  }
+
+  .navbar {
+    position: sticky;
+    top: 32PX;
+
+
+  }
+
+  .heading {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-image: url('./images/secOneBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+  }
+
+  .aboutimg,
+  .processimg {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+
+  .abtimgone img {
+    height: 500px;
+    background-color: #e1f3d2;
+    width: 60%;
+  }
+
+  .aboutusimg {
+    height: 250px;
+  }
+}
+
+
+@media only screen and (max-width: 568px) {
   .btnshop {
     width: 129px;
     position: absolute;
@@ -645,4 +1264,62 @@ button.navbar-toggler {
     bottom: 30px;
     padding: 4px 13px;
   }
+
+  .productCardOuter {
+    width: 280px;
+  }
+
+  .inner-BannerCont {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+}
+
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp-solid,
+.fa-solid,
+.fab,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  color: var(--primary-color);
+
+
+}
+
+.conthead {
+  color: var(--primary-color);
+}
+
+p.remcont {
+  color: var(--primary-color);
+  margin-bottom: 0px !important;
+}
+
+.endline {
+  color: grey;
+}
+.bannnerBtn:hover {
+color:var(--primary-color);
+background-color: white;
+border: 2px solid var(--primary-color);
+}
+.totalprice{
+  height: 50px;
+  width: 210px;
+  background-color:var(--secondary-color);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+ 
 }

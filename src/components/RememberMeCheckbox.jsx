@@ -15,7 +15,7 @@ const RememberMeCheckbox = ({ rememberMe, onChange }) => {
         />
       </div>
       <div className="col-10 d-flex align-items-center">
-        <p>  Remember Me</p>
+        <p className='remcont'>  Remember Me</p>
 
       </div>
     </div>

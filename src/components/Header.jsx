@@ -1,32 +1,35 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 const Header = () => {
     return (
         <>
-     
-            <div className="container  text-cente px-0">
-                <div className='heading text-center'>
-                    <div className="cont">
-                        <h2 className="cont">Welcome To SereniTea Hills</h2>
-                        <br/>
-                        <h4 className="cont">"Indulge in Flavorful Bliss,Delivered to Your Doorstep."</h4>
-                    </div>
-                </div>
 
-                {/* <div>
-                    <h1 className='welcome'>Welcome to serenity Hills</h1>
-                    <img src={Headerimg} className='img-fluid'  />
-                </div> */}
-                {/* <div>
-                    <img src={Headerimg} className='img-fluid' />
-                    <div style={{ position: 'absolute', top: '25%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', textAlign: 'center' }}>
-                        <h1>Welocme To Serenity Hills</h1>
-                        <br />
-                        <h2>"Indulge in Flavorful Bliss,Delivered to Your Doorstep."</h2>
+            <section className='welcomeSec'>
+                <div className="container">
+
+
+                    <div className="row d-flex justify-content-center">
+
+                        <div className="col-12 text-center">
+
+                            <h1> Welcome to Sereni Tea Hills </h1>
+
+                        </div>
+                        <div className="col-10 text-center">  <p> Discover the finest teas, handpicked from lush hills, and delivered to your doorstep. Indulge in a serene tea experience with every sip. Enjoy the perfect blend of flavor and tranquility from SereniTea Hills.</p>
+                        </div>
+
                     </div>
-                </div> */}
-            </div>
+
+
+                </div>
+            </section>
         </>
     )
 }
