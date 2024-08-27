@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SereniTea-Hills/static/css/main.94118b09.css",
-    "main.js": "/SereniTea-Hills/static/js/main.50883968.js",
-    "static/js/453.7c66019e.chunk.js": "/SereniTea-Hills/static/js/453.7c66019e.chunk.js",
+    "main.js": "/SereniTea-Hills/static/js/main.0cf0ee7c.js",
+    "static/js/453.8460659d.chunk.js": "/SereniTea-Hills/static/js/453.8460659d.chunk.js",
     "static/media/backdrop.jpg": "/SereniTea-Hills/static/media/backdrop.f4b0eddeb82a996982fc.jpg",
     "static/media/ourStry.jpg": "/SereniTea-Hills/static/media/ourStry.ab553d8f88e64b54b219.jpg",
     "static/media/abtpgimg.jpg": "/SereniTea-Hills/static/media/abtpgimg.717a34d0521f48fe869c.jpg",
@@ -34,11 +34,11 @@
     "static/media/coffee 2.jpg": "/SereniTea-Hills/static/media/coffee 2.fa1855f43e87d08a8bc3.jpg",
     "index.html": "/SereniTea-Hills/index.html",
     "main.94118b09.css.map": "/SereniTea-Hills/static/css/main.94118b09.css.map",
-    "main.50883968.js.map": "/SereniTea-Hills/static/js/main.50883968.js.map",
-    "453.7c66019e.chunk.js.map": "/SereniTea-Hills/static/js/453.7c66019e.chunk.js.map"
+    "main.0cf0ee7c.js.map": "/SereniTea-Hills/static/js/main.0cf0ee7c.js.map",
+    "453.8460659d.chunk.js.map": "/SereniTea-Hills/static/js/453.8460659d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94118b09.css",
-    "static/js/main.50883968.js"
+    "static/js/main.0cf0ee7c.js"
   ]
 }
